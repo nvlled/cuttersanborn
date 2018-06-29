@@ -2,7 +2,7 @@
   "name": "cuttersanborn",
   "version": "1.0.0",
   "description": "",
-  "main": "scrape.js",
+  "main": "lib.js",
   "dependencies": {
     "bluebird": "^3.5.1",
     "cheerio": "^1.0.0-rc.2",
@@ -17,5 +17,9 @@
     "test": "mocha"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "pkg": {
+      "scripts": "cli.js",
+      "assets": "cutter-data.json"
+  }
 }
