@@ -4,9 +4,9 @@ const expect = require('chai').expect;
 const lib = require("../lib");
 
 describe("Generate cutter number", async function() {
-    let index;
+    let generateCutter;
     before(async function() {
-        index = await lib.readCutterIndex();
+        generateCutter = await lib();
     });
 
     let data = [
@@ -22,7 +22,7 @@ describe("Generate cutter number", async function() {
     ];
     for (let {fname, lname, cutterNum} of data) {
         it(`should yield ${cutterNum} for ${fname} ${lname}`, async function() {
-            let num = await lib.generateCutter(fname, lname, {index});
+            let num = await generateCutter(fname, lname);
             expect(num).to.equal(cutterNum);
         });
     }

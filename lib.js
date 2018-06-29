@@ -140,7 +140,9 @@ async function generateCutter(firstname, lastname, args) {
     return "";
 }
 
-module.exports = {
-    generateCutter,
-    readCutterIndex,
+async function load() {
+    let index = await readCutterIndex();
+    return (fname, lname) => generateCutter(fname, lname, {index});
 }
+
+module.exports = load;
