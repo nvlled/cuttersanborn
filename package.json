@@ -20,6 +20,10 @@
   "license": "ISC",
   "pkg": {
       "scripts": "cli.js",
-      "assets": "cutter-data.json"
-  }
+      "assets": ["cutter-data.json"],
+      "targets": [
+          "node8-linux-x64"
+      ]
+  },
+  "bin": "./cli.js"
 }
