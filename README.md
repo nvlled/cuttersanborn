@@ -8,7 +8,7 @@ Either install through npm:
 ```
 npm install -g cuttersanborn
 ```
-or download a standalone binary.
+or [download a standalone binary](https://github.com/nvlled/cuttersandborn/releases).
 
 ## CLI usage help
 ```
@@ -53,3 +53,7 @@ let cutterNum      = await generateCutter(lastname, firstname);
 
 ```
 Note: the functions return a promise.
+
+## Related Links
+[OCLC Dewey Cutter Program](https://www.oclc.org/support/services/dewey/program.en.html)
+This is a windows GUI program, so it was hard to use programmatically.

@@ -29,7 +29,7 @@ examples:
 }
 
 async function main() {
-    let generateCutter = await require("./lib")();
+    let generateCutter = require("./lib");
     let progname = basename(process.argv[1]);
     let args = require("minimist")(process.argv.slice(2));
 
@@ -83,7 +83,7 @@ async function main() {
     }
 
     for (let {lname, fname} of names) {
-        let cutterNum = await generateCutter(lname, fname)
+        let cutterNum = generateCutter(lname, fname)
         if (!cutterNum) {
             console.error(`** failed to generate number for ${lname},${fname}`);
         } else {
