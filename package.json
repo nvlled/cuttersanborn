@@ -6,6 +6,7 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "cheerio": "^1.0.0-rc.2",
+    "minimist": "^1.2.0",
     "request": "^2.87.0",
     "request-promise": "^4.2.2"
   },
@@ -19,11 +20,13 @@
   "author": "",
   "license": "ISC",
   "pkg": {
-      "scripts": "cuttersanborn.js",
-      "assets": ["cutter-data.json"],
-      "targets": [
-          "node8-linux-x64"
-      ]
+    "scripts": "cuttersanborn.js",
+    "assets": [
+      "cutter-data.json"
+    ],
+    "targets": [
+      "node8-linux-x64"
+    ]
   },
   "bin": "./cuttersanborn.js"
 }
