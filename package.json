@@ -1,6 +1,6 @@
 {
   "name": "cuttersanborn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib.js",
   "dependencies": {
@@ -19,11 +19,11 @@
   "author": "",
   "license": "ISC",
   "pkg": {
-      "scripts": "cli.js",
+      "scripts": "cuttersanborn.js",
       "assets": ["cutter-data.json"],
       "targets": [
           "node8-linux-x64"
       ]
   },
-  "bin": "./cli.js"
+  "bin": "./cuttersanborn.js"
 }
