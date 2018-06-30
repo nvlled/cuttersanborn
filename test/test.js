@@ -10,15 +10,15 @@ describe("Generate cutter number", async function() {
     });
 
     let data = [
-        {fname: "John", lname: "Adams", cutterNum: "A214"},
-        {fname: "john", lname: "adams", cutterNum: "A214"},
-        {fname: "Ruth", lname: "Adams", cutterNum: "A216"},
-        {fname: "Linda", lname: "Gabel", cutterNum: "G112"},
-        {fname: "Brian", lname: "Lavoie", cutterNum: "L414"},
-        {fname: "Edward", lname: "O'Neill", cutterNum: "O58"},
-        {fname: "Helen", lname: "Andrews", cutterNum: "A566"},
-        {fname: "Hopkins", lname: "Johns", cutterNum: "J65"},
-        {fname: "1234", lname: "12313", cutterNum: ""},
+        {lname: "John",     fname: "Adams", cutterNum: "A214"},
+        {lname: "john",     fname: "adams", cutterNum: "A214"},
+        {lname: "Ruth",     fname: "Adams", cutterNum: "A216"},
+        {lname: "Linda",    fname: "Gabel", cutterNum: "G112"},
+        {lname: "Brian",    fname: "Lavoie", cutterNum: "L414"},
+        {lname: "Edward",   fname: "O'Neill", cutterNum: "O58"},
+        {lname: "Helen",    fname: "Andrews", cutterNum: "A566"},
+        {lname: "Hopkins",  fname: "Johns", cutterNum: "J65"},
+        {lname: "1234",     fname: "12313", cutterNum: ""},
     ];
     for (let {fname, lname, cutterNum} of data) {
         it(`should yield ${cutterNum} for ${fname} ${lname}`, async function() {
