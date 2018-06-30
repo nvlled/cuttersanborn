@@ -17,8 +17,11 @@ options:
         shows the help
 
     --file <filename>
-        A comma-separated list of names.
-        If <filename> is -, then input is read from stdin
+        A comma-separated list of names: 
+        lastname1, firstname1
+        lastname2, firstname2
+        lastname3,firstname3
+        ...
                     
     --outputname
         Shows the name in output
@@ -57,3 +60,4 @@ Note: the functions return a promise.
 ## Related Links
 [OCLC Dewey Cutter Program](https://www.oclc.org/support/services/dewey/program.en.html)
 This is a windows GUI program, so it was hard to use programmatically.
+
