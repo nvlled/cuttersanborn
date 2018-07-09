@@ -8,7 +8,7 @@ Either install through npm:
 ```
 npm install -g cuttersanborn
 ```
-or [download a standalone binary](https://github.com/nvlled/cuttersandborn/releases).
+or [download a standalone binary](https://github.com/nvlled/cuttersandborn/releases) (note: it's large)
 
 ## CLI usage help
 ```
@@ -51,8 +51,8 @@ $npm install --save cuttersanborn
 
 Then require/import in your code:
 ```
-let generateCutter = await require("cuttersanborn")();
-let cutterNum      = await generateCutter(lastname, firstname);
+let generateCutter = require("cuttersanborn")();
+let cutterNum      = generateCutter(lastname, firstname);
 
 ```
 Note: the functions return a promise.
